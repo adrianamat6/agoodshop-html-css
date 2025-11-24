@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: white;
+    border-bottom: 1px solid #dddbdb;
+}
+
+#navigator{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 150px 0 90px;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.brand img{
+    width: 170px;
+    padding-left: 20px; 
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;
+}
+
+.contact{
+    border: 1px solid #ccc; 
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+
+.product-detail{
+    display: flex; 
+    padding: 35px 150px 0 120px; 
+    gap: 30px;
+}
+
+.col-image{
+    position: relative;
+}
+
+.tag-gb {
+    position: absolute; 
+    background-color: rgb(65, 187, 65);
+    padding: 5px; 
+    color: white; 
+    margin: 15px; 
+    font-size: 0.9rem; 
+
+}
+
+.tag-ofert{
+    color: red; 
+    font-size:0.9rem; 
+    font-weight: bold;
+    
+}
+
+.description{
+    text-align: justify;
+}
+
+.buy-box{
+    margin: 30px 0px ; 
+    display: flex; 
+    flex-direction:column; 
+    gap: 20px; 
+}
+
+.buy-box-row1{
+    display:flex; 
+    gap: 20px; 
+
+}
+
+.price{
+    font-size: 1.9rem; 
+    font-weight: bold;
+}
+
+.btn-buy{
+    background-color: #3980f1;
+    padding: 10px; 
+    border-radius: 8px; 
+    color: white; 
+    font-size: 0.9rem; 
+    border: none; 
+}
+
+
+.icon-list{
+    display:flex;
+    align-items: center; 
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;
+}
+
+.icon-list li{
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 5px; 
+
+}
+
+
+.recommendation-section{
+    padding: 35px 150px 0 120px; 
+}
+
+.recommendation-grid{
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.recommendation-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.recommendation-grid article {
+    border: 1px solid #cecdcd;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.bnt-offert{
+    background-color: red;
+    color: white; 
+    padding: 8px 10px; 
+    font-size: 0.9rem; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.bnt-new{
+    background-color: #3980f1;
+    color: white; 
+    padding: 8px 10px; 
+    font-size: 0.9rem; 
+    border: 1px #116cff; 
+    border-radius: 5px; 
+}
+
+
+.raffle-section{
+    margin: 35px 150px 0 120px; 
+    display:flex;
+    border: 1px solid #cecdcd;
+    background-color: #ecf4ff;
+    gap: 10px;
+    padding: 40px; 
+    border: none; 
+}
+
+.raffle-left{
+    flex:6; 
+}
+
+.raffle-left h1{
+    padding:0;
+    margin:0;  
+}
+
+
+.raffle-form{
+    display:flex; 
+    flex-direction: column;
+    flex:4; 
+    gap: 20px; 
+}
+
+.send-form{
+    background-color: #3980f1;
+    padding: 10px; 
+    border-radius: 8px; 
+    color: white; 
+    font-size: 0.7rem; 
+    border: none;  
+    margin-top: 10px; 
+}
+
+.form-input{
+    width: 100%;
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    color: #333;
+    margin-top: 5px; 
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+footer{
+    text-align: center; 
+    border-top: 1px solid #cecdcd;
+    margin-top: 50px; 
+    padding-top: 15px; 
+    height: 0.6rem;
+}
+
+
+/* =========================================
+   DISEÑO RESPONSIVE PARA MOVILES
+   ========================================= */
+@media (max-width: 768px) { 
+
+
+#navigator, .product-detail, .recommendation-section, .raffle-section {
+    margin: 0 auto;
+    padding: 20px; 
+    flex-direction: column; 
+    height: auto;  /* Deja que la caja crezca lo que necesite */
+    text-align: flex-start; 
+    flex: 1;
+}
+
+
+#navigator {
+    align-items: flex-start; 
+    text-align: left;        
+    padding-bottom: 1px; 
+    margin-top: -10px; 
+}
+
+.links {
+        display: none; 
+    }
+
+.brand img { 
+    padding-left: 0; 
+    margin-left: -15px;
+}
+
+.col-image img {
+        width: 100%;
+        flex: 1; 
+    }
+
+
+.buy-box .icon-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;        /* <--- LA CLAVE: Permite caer a la siguiente línea */
+
+}
+.buy-box .icon-list li {
+    width: 45%; 
+}
+
+.buy-box {
+        margin-bottom: 0px; /* Reducimos de 30px a 10px o 0 */
+        padding-bottom: 0px;
+}
+
+.recommendation-section {
+        padding-top: 0;      /* Quitamos el relleno superior */
+        margin-top: 0;       /* Aseguramos que no haya margen externo */
+    }
+
+
+.recommendation-grid{
+    display:grid; 
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.recommendation-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.raffle-section {
+    margin: 20px; 
+    margin-bottom: 0;   
+}
+
+footer {
+    margin: 20px; 
+    padding: 0px;
+}
+
+}
