@@ -1,3 +1,6 @@
+/* =========================================
+   1. ESTILOS GLOBALES Y RESET
+   ========================================= */
 *{
     box-sizing: border-box;
 }
@@ -5,6 +8,18 @@ body{
     margin:0;
     font-family: sans-serif;
 }
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+
+/* =========================================
+   2. CABECERA (HEADER) Y NAVEGACIÓN
+   ========================================= */
 
 header{
     background-color: white;
@@ -26,13 +41,6 @@ header{
     padding-left: 20px; 
 }
 
-a{
-    color: #333;
-    text-decoration: none;
-}
-a:hover{
-    font-weight: bold;
-}
 
 .links{
     display: flex;
@@ -46,6 +54,10 @@ a:hover{
     padding: 10px;
     border-radius: 5px; 
 }
+
+/* =========================================
+   3. SECCIÓN 1: DETALLE DEL PRODUCTO
+   ========================================= */
 
 
 .product-detail{
@@ -123,6 +135,9 @@ a:hover{
 
 }
 
+/* =========================================
+   4. SECCIÓN 2: RECOMENDADOS (GRID)
+   ========================================= */
 
 .recommendation-section{
     padding: 35px 150px 0 120px; 
@@ -163,6 +178,9 @@ a:hover{
     border-radius: 5px; 
 }
 
+/* =========================================
+   5. SECCIÓN 3: SORTEO (FORMULARIO)
+   ========================================= */
 
 .raffle-section{
     margin: 35px 150px 0 120px; 
@@ -215,6 +233,10 @@ button:hover{
     font-weight: bold;
 }
 
+/* =========================================
+   6. FOOTER
+   ========================================= */
+
 footer{
     text-align: center; 
     border-top: 1px solid #cecdcd;
@@ -234,7 +256,7 @@ footer{
     margin: 0 auto;
     padding: 20px; 
     flex-direction: column; 
-    height: auto;  /* Deja que la caja crezca lo que necesite */
+    height: auto;  
     text-align: flex-start; 
     flex: 1;
 }
@@ -265,7 +287,7 @@ footer{
 .buy-box .icon-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;        /* <--- LA CLAVE: Permite caer a la siguiente línea */
+    flex-wrap: wrap;       
 
 }
 .buy-box .icon-list li {
@@ -273,13 +295,13 @@ footer{
 }
 
 .buy-box {
-        margin-bottom: 0px; /* Reducimos de 30px a 10px o 0 */
+        margin-bottom: 0px; 
         padding-bottom: 0px;
 }
 
 .recommendation-section {
-        padding-top: 0;      /* Quitamos el relleno superior */
-        margin-top: 0;       /* Aseguramos que no haya margen externo */
+        padding-top: 0;      
+        margin-top: 0;       
     }
 
 
@@ -300,8 +322,9 @@ footer{
 }
 
 footer {
-    margin: 20px; 
+    margin: 20px 0px 0px 0px; 
     padding: 0px;
+    border-top: 1px solid #ccc;
 }
 
 }
