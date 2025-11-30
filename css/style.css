@@ -145,7 +145,7 @@ a:hover{
     border-radius: 10px;
 }
 
-.bnt-offert{
+.btn-offert{
     background-color: red;
     color: white; 
     padding: 8px 10px; 
@@ -154,7 +154,7 @@ a:hover{
     border-radius: 5px; 
 }
 
-.bnt-new{
+.btn-new{
     background-color: #3980f1;
     color: white; 
     padding: 8px 10px; 
@@ -174,11 +174,11 @@ a:hover{
     border: none; 
 }
 
-.raffle-left{
+.raffle-info{
     flex:6; 
 }
 
-.raffle-left h1{
+.raffle-info h1{
     padding:0;
     margin:0;  
 }
